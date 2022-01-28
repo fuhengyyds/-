@@ -1,0 +1,72 @@
+body{
+    background-image: url(./img/backgroung.jpg);
+    background-size: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.body{
+    width: 1000px;
+    height: 550px;
+    margin: 100px auto;
+    position: relative;
+}
+.body .img ul img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.body .change .pre{
+    position: absolute;
+    left: 0;
+    top: 230px;
+    width: 41px;
+    height: 69px;
+    background-image: url(./img/icon-slides.png);
+    background-position:-83px 0;
+    transition: all .6s;
+    cursor: pointer;
+}
+.body .change .next{
+    position: absolute;
+    top: 230px;
+    right: 0;
+    width: 41px;
+    height: 69px;
+    background-image: url(./img/icon-slides.png);
+    background-position:-123px 0;
+    transition: all .6s;
+    cursor: pointer;
+}
+.body .change .pre:hover{
+    background-image: url(./img/icon-slides.png);
+    background-position: 0;
+}
+.body .change .next:hover{
+    background-image: url(./img/icon-slides.png);
+    background-position: -41px 0;
+}
+.body .dot{
+    position: absolute;
+    right: 50px;
+    bottom: 10px;
+}
+.body .dot div{
+    width: 8px;
+    height: 8px;
+    float: left;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .4);
+    border:2px solid #fff;
+    border-color: hsla(0,0%,100%,.3);
+    margin: 15px;
+    cursor: pointer;
+}
+.body .dot>.active{
+    background:hsla(0,0%,100%,.4);
+    border-color: rgba(0,0,0,.4);
+}
